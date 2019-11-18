@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <title>OTIS | Service Request Form</title>
+    <link rel="stylesheet" href="../assets/styles/general.css">
+    <link rel="stylesheet" href="../assets/styles/components/service-request-form.css">
+    
+  </head>
+  <body>
+    <main>
+    
+<div class="service-request ">
+  <!-- full-height -->
+  <form id="service-request__form" class="service-request__form">
+    <h4 class="service-request__header">quick service request</h4>
+    <span
+      id="service-request__invalid-text"
+      class="service-request__invalid-text"
+    >
+      Please select the required fields to create your request
+    </span>
+
+    <div class="service-request__form-row">
+      <div class="col-md-50">
+        <div class="service-request__select">
+          <select id="location" required>
+            <option value="">Select Building</option>
+            <option value="Building 1">Building 1</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-50">
+        <div class="service-request__select">
+          <select id="unit" required>
+            <option value="" selected>Unit</option>
+            <option value="Unit 1">Unit 1</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row">
+      <div class="col-md-50">
+        <div class="service-request__select">
+          <select id="door" required>
+            <option value="">Door Condition</option>
+            <option value="Open">Open</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-50">
+        <div class="service-request__radio">
+          <span class="form__label">Running</span>
+          <label class="radio">
+            <input type="radio" name="radio" value="1" />
+            <span>Yes</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="radio" value="2" checked />
+            <span>No</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row">
+      <div class="col-md-100">
+        <div class="service-request__select">
+          <select id="time" required>
+            <option value="">Preferred service time</option>
+            <option value="Regular hours">Regular hours</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row">
+      <div class="col-md-100">
+        <div class="service-request__input">
+          <textarea rows="3" placeholder="Details" required></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row full-height--visible">
+      <div class="col-md-100">
+        <div class="service-request__input">
+          <input type="text" placeholder="Extra Field 1" />
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row full-height--visible">
+      <div class="col-md-100">
+        <div class="service-request__input">
+          <input type="text" placeholder="Extra Field 2" />
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row full-height--visible">
+      <div class="col-md-100">
+        <div class="service-request__input">
+          <input type="text" placeholder="Extra Field 3" />
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row">
+      <div class="col-md-50">
+        <div class="service-request__button" id="service-request__button">
+          <button>CREATE</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+    </main>
+  </body>  
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../assets/scripts/service-request-form.js"></script>
+

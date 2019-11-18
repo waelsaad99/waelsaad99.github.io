@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <title>OTIS | Map</title>
+    <link rel="stylesheet" href="../assets/styles/general.css">
+    <link rel="stylesheet" href="../assets/styles/components/map.css">
+    
+  </head>
+  <body>
+    <main>
+    
+<div class="otis-map">
+  <div class="otis-map__select">
+    <div class="dropdown">
+      <button
+        onclick="dropdownFunction()"
+        class="dropbtn"
+        id="dropbtn"
+      ></button>
+      <div id="unitsDropdown" class="dropdown-content"></div>
+    </div>
+  </div>
+  <div class="otis-map__footer">
+    <span id="otis-map__unit" class="otis-map__unit"></span>
+    <div class="otis-map__alert">
+      <span id="otis-map__alert"></span>
+      <div id="otis-map__alert-tooltip" class="otis-map__alert-tooltip"></div>
+    </div>
+  </div>
+  <div id="map">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA41faP5-IvcI2oDdRa-dvY4zhrd9Tsoq4&callback=initMap"
+      defer
+    ></script>
+  </div>
+</div>
+
+
+    </main>
+  </body>  
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../assets/scripts/jquery.nicescroll.js"></script>
+<script src="../assets/scripts/map.js"></script>
+
