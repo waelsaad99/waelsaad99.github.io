@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <title>OTIS | dashboard</title>
+    <link rel="stylesheet" href="assets/styles/general.css">
+    <link rel="stylesheet" href="assets/styles/components/sidenav.css">
+    <link rel="stylesheet" href="assets/styles/components/footer.css">
+    <link rel="stylesheet" href="assets/styles/pages/dashboard.css">
+    
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+      <nav>
+        
+          
+          
+          
+            
+          
+          <div class="otis-nav">
+    <div class="otis-nav__brand">
+        OTIS
+    </div>
+    <div class="otis-nav__toggle">
+        <div class="otis-nav__icons">
+            <div class="otis-nav__bar1"></div>
+            <div class="otis-nav__bar2"></div>
+            <div class="otis-nav__bar3"></div>
+        </div>
+    </div>
+    
+        <div class="otis-nav__notifications-items toogle-notifications">
+            <div class="otis-nav__notifications-close">
+                <img class="otis-nav__notifications-closeIcon" src="assets/images/close.svg" alt="close"/>
+            </div>
+            
+                <div class="otis-nav__notifications-item">
+                    <div class="otis-nav__notifications-warning">
+                        <img src="assets/images/icon-warning.svg">
+                    </div>
+                    <div class="otis-nav__notifications-info">
+                        <p>
+                            1 Carrier Place </p>
+                        <span>Lobby B Elevator C</span>
+                        <span>Unusual sound in door open</span>
+                    </div>
+                    <div class="otis-nav__notifications-date">
+                        <span>Yesterday</span>
+                    </div>
+                </div>
+
+            
+                <div class="otis-nav__notifications-item">
+                    <div class="otis-nav__notifications-warning">
+                        <img src="assets/images/icon-warning.svg">
+                    </div>
+                    <div class="otis-nav__notifications-info">
+                        <p>
+                            JWS Hospital </p>
+                        <span>Lobby A</span>
+                        <span>Fire or smoke</span>
+                    </div>
+                    <div class="otis-nav__notifications-date">
+                        <span>4 Nov 2019</span>
+                    </div>
+                </div>
+
+            
+                <div class="otis-nav__notifications-item">
+                    <div class="otis-nav__notifications-warning">
+                        <img src="assets/images/icon-warning.svg">
+                    </div>
+                    <div class="otis-nav__notifications-info">
+                        <p>
+                            10 Farm Springs </p>
+                        <span>Lobby B Elevator C</span>
+                        <span>Unusual sound in door open</span>
+                    </div>
+                    <div class="otis-nav__notifications-date">
+                        <span>3 Nov 2019</span>
+                    </div>
+                </div>
+
+            
+                <div class="otis-nav__notifications-item">
+                    <div class="otis-nav__notifications-warning">
+                        <img src="assets/images/icon-warning.svg">
+                    </div>
+                    <div class="otis-nav__notifications-info">
+                        <p>
+                            1 Carrier Place</p>
+                        <span>Lobby B Elevator C </span>
+                        <span>Door jammed</span>
+                    </div>
+                    <div class="otis-nav__notifications-date">
+                        <span>2 Nov 2019</span>
+                    </div>
+                </div>
+
+            
+    <div class="otis-nav__notifications-item__all">
+            <a href="#">Read all notifications</a>
+        </div>
+        </div>
+
+        
+        <ul class="otis-nav__items">
+            <li class="otis-nav__link otis__notifications">
+                <a class="otis-nav__page" href="#">
+                    <i class="icon-notification"></i>
+                    <span class="otis-nav__page-name">Notifications</span>
+                         
+                    <span class="otis-nav__notification-alert"></span>
+                    
+        
+                </a>
+            </li>
+            <li class="otis-nav__link active-link">
+                <a class="otis-nav__page" href="#">
+                    <i class="icon-home"></i>
+                    <span class="otis-nav__page-name">Home</span>
+                </a>
+            </li>
+            <li class="otis-nav__link ">
+                <a class="otis-nav__page" href="#">
+                    <i class="icon-tickets"></i>
+                    <span class="otis-nav__page-name">service request</span>
+                </a>
+            </li>
+            <li class="otis-nav__link ">
+                <a class="otis-nav__page" href="#">
+                    <i class="icon-building"></i>
+                    <span class="otis-nav__page-name">Unit details</span>
+                </a>
+            </li>
+            <li class="otis-nav__link ">
+                <a class="otis-nav__page" href="#">
+                    <i class="icon-finance"></i>
+                    <span class="otis-nav__page-name">Billing and payments</span>
+                </a>
+            </li>
+            <li class="otis-nav__link ">
+                <a class="otis-nav__page" href="#">
+                    <i class="icon-report"></i>
+                    <span class="otis-nav__page-name">Reports</span>
+                </a>
+            
+        </li>
+            <li class="otis-nav__link otis-nav__service-request">
+                <a class="otis-nav__page otis-nav__request-link" href="#">
+                    <span class="icon-tickets"></span>
+                    <span class="otis-nav__page-name">Create Service Request</span>
+                </a>
+            </li>
+            <li class="otis-nav__persona ">
+                <a class="" href="#">
+                    <span class="otis-nav__persona-account">CE</span>
+
+                </a>
+            </li>
+
+        </ul>
+    </div>
+        </nav>
+        <main>
+          
+
+  <div class="row row-height row-margin">
+    <div class="col-lg-8 col-md-12 ">
+       
+      <section class="service-requests-section "> <!-- full-height -->
+    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="false">
+        <!--Opened Tickets-->
+        <div class="tickets-accordion">
+
+            <div role="tab" id="opened-tickets-heading">
+                <a class="tickets-accordion__collapsable collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                    href="#opened-tickets-collapse" aria-expanded="true" aria-controls="opened-tickets-collapse">
+                    <h4 class="tickets-accordion__header"> open services & requests
+                     
+                    <span class="tickets-accordion__header-counter tickets-accordion__header-counter--open">9</span>
+                    
+                    </h4>
+                </a>
+            </div>
+
+            <div id="opened-tickets-collapse" class="collapse show tickets-accordion__body" role="tabpanel" aria-labelledby="opened-tickets-heading"
+                data-parent="#accordionEx">
+                
+                <div class="swiper-container opened-tickets-swiper">
+                    <div class="swiper-wrapper tickets-accordion__tickets-carousel" id="open_tickets">
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Fire or smoke  (5 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 1</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS1
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>4:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Door Jammed (8 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 2</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS2
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>6:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                <i class="icon-tickets show-mob"></i>
+                                
+                                
+                                Unusuall sound on door open (5 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 3</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS3
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>2:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>New</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Door Stuck (9 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 4</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS4
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>7:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>1:00PM 26-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Fire or smoke (4 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 1</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS1
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>4:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Door Jammed (8 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 2</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS2
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>6:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                <i class="icon-tickets show-mob"></i>
+                                
+                                
+                                Unusuall sound on door open (5 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 3</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS3
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>2:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>New</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Fire or smoke  (5 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 1</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS1
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>4:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card open">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                    
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Door Jammed (8 hours)</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 2</span>
+                                   
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS2
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                                <span>Created:</span>
+                                <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                                <span>Updated:</span>
+                                <b>6:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next open"></div>
+                <div class="swiper-button-prev open"></div>
+                <div class="tickets-accordion__show-more-wrapper" id="show-more-open">
+                    <button class="tickets-accordion__show-more-btn">Load More</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--Closed Tickets-->
+        <div class="tickets-accordion">
+            <div role="tab" id="closed-tickets-heading">
+                <a class="tickets-accordion__collapsable" data-toggle="collapse" data-parent="#accordionEx"
+                    href="#closed-tickets-collapse" aria-expanded="false" aria-controls="closed-tickets-collapse">
+                    <h4 class="tickets-accordion__header"> closed services & requests 
+                    
+                    <span class="tickets-accordion__header-counter tickets-accordion__header-counter--closed">8</span>
+                    
+                    </h4>
+                </a>
+            </div>
+
+            <div id="closed-tickets-collapse" class="collapse tickets-accordion__body" role="tabpanel" aria-labelledby="closed-tickets-collapse"
+                data-parent="#accordionEx">
+                
+                <div class="swiper-container closed-tickets-swiper">
+                    <div class="swiper-wrapper tickets-accordion__tickets-carousel" id="closed_tickets">
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card closed">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Fire or smoke</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 1</span>
+                               
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS1
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                            <span>Created:</span>
+                            <b>4:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                            <span>Closed:</span>
+                            <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card closed">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Door Jammed</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 2</span>
+                               
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS2
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                            <span>Created:</span>
+                            <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                            <span>Closed:</span>
+                            <b>6:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card closed">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                
+                                <i class="icon-tickets show-mob"></i>
+                                
+                                
+                                Unusuall sound on door open</div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 3</span>
+                               
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS3
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                            <span>Created:</span>
+                            <b>2:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                            <span>Closed:</span>
+                            <b>2:00PM 26-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card closed">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Door Stuck </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 4</span>
+                               
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS4
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                            <span>Created:</span>
+                            <b>7:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                            <span>Closed:</span>
+                            <b>1:00PM 26-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card closed">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Fire or smoke </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 1</span>
+                               
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS1
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                            <span>Created:</span>
+                            <b>4:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                            <span>Closed:</span>
+                            <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card closed">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                
+                                
+                                <i class="icon-tickets hide-mob"></i>
+                                
+                                Door Jammed </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 2</span>
+                               
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                                <img src="assets/images/icon-warning.svg">
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS2
+                                
+                                <i class="icon-tech"></i>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                            <span>Created:</span>
+                            <b>5:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                            <span>Closed:</span>
+                            <b>6:00PM 25-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card closed">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                
+                                <i class="icon-tickets show-mob"></i>
+                                
+                                
+                                Unusuall sound on door open </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 3</span>
+                               
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS3
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                            <span>Created:</span>
+                            <b>2:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                            <span>Closed:</span>
+                            <b>2:00PM 26-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide tickets-accordion__ticket-card closed">
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--title">
+                                
+                                <i class="icon-tickets show-mob"></i>
+                                
+                                
+                                Unusuall sound on door open </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--elevator">
+                                <span>
+                                    <span class="tickets-accordion__ticket-info--elevator-name">Elevator 3</span>
+                               
+                                    <span class="tickets-accordion__ticket-info--elevator-number">23890487 </span>
+                                </span>
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--location">
+                                <i class="icon-location"></i>
+                                JWS3
+                                
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time first">
+                            <span>Created:</span>
+                            <b>2:00PM 25-OCT-2019</b>
+                            </div>
+                            <div class="tickets-accordion__ticket-info tickets-accordion__ticket-info--time mp-0">
+                            <span>Closed:</span>
+                            <b>2:00PM 26-OCT-2019</b>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next closed"></div>
+                <div class="swiper-button-prev closed"></div>
+                <div class="tickets-accordion__show-more-wrapper" id="show-more-closed">
+                    <button class="tickets-accordion__show-more-btn">Load More</button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+    </div>
+    <div class="col-lg-4 col-md-12 d-none d-lg-block ">
+      <div class="service-request ">
+  <!-- full-height -->
+  <form id="service-request__form" class="service-request__form">
+    <h4 class="service-request__header">quick service request</h4>
+    <span
+      id="service-request__invalid-text"
+      class="service-request__invalid-text"
+    >
+      Please select the required fields to create your request
+    </span>
+
+    <div class="service-request__form-row">
+      <div class="col-md-50">
+        <div class="service-request__select">
+          <select id="location" required>
+            <option value="">Select Building</option>
+            <option value="Building 1">Building 1</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-50">
+        <div class="service-request__select">
+          <select id="unit" required>
+            <option value="" selected>Unit</option>
+            <option value="Unit 1">Unit 1</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row">
+      <div class="col-md-50">
+        <div class="service-request__select">
+          <select id="door" required>
+            <option value="">Door Condition</option>
+            <option value="Open">Open</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-50">
+        <div class="service-request__radio">
+          <span class="form__label">Running</span>
+          <label class="radio">
+            <input type="radio" name="radio" value="1" />
+            <span>Yes</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="radio" value="2" checked />
+            <span>No</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row">
+      <div class="col-md-100">
+        <div class="service-request__select">
+          <select id="time" required>
+            <option value="">Preferred service time</option>
+            <option value="Regular hours">Regular hours</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row">
+      <div class="col-md-100">
+        <div class="service-request__input">
+          <textarea rows="3" placeholder="Details" required></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row full-height--visible">
+      <div class="col-md-100">
+        <div class="service-request__input">
+          <input type="text" placeholder="Extra Field 1" />
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row full-height--visible">
+      <div class="col-md-100">
+        <div class="service-request__input">
+          <input type="text" placeholder="Extra Field 2" />
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row full-height--visible">
+      <div class="col-md-100">
+        <div class="service-request__input">
+          <input type="text" placeholder="Extra Field 3" />
+        </div>
+      </div>
+    </div>
+    <div class="service-request__form-row">
+      <div class="col-md-50">
+        <div class="service-request__button" id="service-request__button">
+          <button>CREATE</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+ 
+    </div>
+  </div>
+  <div class="row row-height ">
+    <div class="col-lg-8 col--margin ">
+      <div class="otis-map">
+  <div class="otis-map__select">
+    <div class="dropdown">
+      <button
+        onclick="dropdownFunction()"
+        class="dropbtn"
+        id="dropbtn"
+      ></button>
+      <div id="unitsDropdown" class="dropdown-content"></div>
+    </div>
+  </div>
+  <div class="otis-map__footer">
+    <span id="otis-map__unit" class="otis-map__unit"></span>
+    <div class="otis-map__alert">
+      <span id="otis-map__alert"></span>
+      <div id="otis-map__alert-tooltip" class="otis-map__alert-tooltip"></div>
+    </div>
+  </div>
+  <div id="map">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA41faP5-IvcI2oDdRa-dvY4zhrd9Tsoq4&callback=initMap"
+      defer
+    ></script>
+  </div>
+</div>
+ 
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="reports">
+    <h4 class="reports__header">Reports</h4>
+    <div id="reports__chart"></div>
+</div> 
+    </div>
+  </div>
+
+
+
+          </main>
+          <footer>
+    <section class="otis-footer ">
+        <span class="otis-footer__otisline">OTISLINE 
+            <a href="tel:800-233-6847" class="otis-footer__hotline"> 800-233-6847</a>
+        </span>
+        <a href="#" class="otis-footer__contact">My Otis Contacts</a>
+        <a href="#" class="otis-footer__legal">Legal</a>
+        <span class="otis-footer__offer">Get 30% off labor and parts when you enable Otis ONE on Elevator 3 Lobby C at 10 Farm Springs before 15 November, <a href = "#" class="otis-footer__offer-link">click here </a> to learn more.</span>
+        <img class="otis-footer__chat" src="./assets/images/icon-chat.svg" alt="chat" >
+    </section>
+</footer>
+
+        </div>
+        
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/scripts/main.js"></script>
+
+          
+
+        </body>
+
+      </html>
