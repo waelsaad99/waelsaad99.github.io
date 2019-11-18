@@ -9800,7 +9800,7 @@ $(document).ready(function() {
     
     $("footer").toggleClass("toggle-opacity");
     $("main").toggleClass("toggle-opacity");
-   
+    $("body").toggleClass("bg-toogle");
    });
 
   //toogle active link
