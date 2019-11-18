@@ -11239,3 +11239,6 @@ main {
     -o-transition:all 2s ease-in-out;
     transition:all 2s ease-in-out;
 }
+.bg-toogle{
+    background-color:#041e42;
+}
