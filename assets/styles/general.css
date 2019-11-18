@@ -11229,3 +11229,7 @@ main {
         height: 92vh
     }
 }
+
+main,footer{
+    opacity:0;
+}
