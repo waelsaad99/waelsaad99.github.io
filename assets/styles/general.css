@@ -11231,5 +11231,5 @@ main {
 }
 
 main,footer{
-    opacity:0;
+    display:none;
 }
