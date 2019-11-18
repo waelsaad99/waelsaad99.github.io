@@ -9797,7 +9797,9 @@ $(document).ready(function() {
     //toggle icon-bar
     $(this).toggleClass("change");
     $(".otis-nav__items").toggleClass("change-toggle");
-
+    
+    $("footer").toggleClass("toggle-opacity");
+    $("main").toggleClass("toggle-opacity");
    });
 
   //toogle active link
