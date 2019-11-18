@@ -233,7 +233,7 @@
     .otis-nav__items {
         -ms-flex-direction: column;
         flex-direction: column;
-        height: 1500%;
+        height:100vh;
         padding: 12px;
         background-color: #041e42;
         padding-top: 22px;
