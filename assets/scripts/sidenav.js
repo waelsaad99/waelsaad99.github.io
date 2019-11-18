@@ -3,6 +3,7 @@ $(document).ready(function() {
     //toggle icon-bar
     $(this).toggleClass("change");
     $(".otis-nav__items").toggleClass("change-toggle");
+    $("main,footer").toggleClass("toggle-opacity");
 
    });
 
