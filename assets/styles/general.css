@@ -11230,6 +11230,6 @@ main {
     }
 }
 
-main,footer{
+.toggle-opacity{
     opacity:0;
 }
