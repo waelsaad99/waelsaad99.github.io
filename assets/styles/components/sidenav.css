@@ -243,7 +243,7 @@
         top: 44px;
         width: 100%;
         transition: all .5s ease-in-out;
-        overflow: hidden
+        overflow: scroll
     }
     .otis-nav__notification-alert {
         top: 37px;
