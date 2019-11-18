@@ -227,6 +227,9 @@
         position: absolute;
         top: 10px
     }
+
+
+    
     .otis-nav__items {
         -ms-flex-direction: column;
         flex-direction: column;
