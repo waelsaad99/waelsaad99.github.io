@@ -208,7 +208,8 @@
         -ms-flex-direction: column;
         flex-direction: column;
         padding: 0;
-        border-bottom: 4px solid #021227
+        border-bottom: 4px solid #021227;
+        height: 100%;
     }
     .otis-nav__brand {
         font-size: 12px;
@@ -296,7 +297,7 @@
         padding: 7px;
         border-radius: 0;
         text-decoration: none;
-        margin-bottom: 290px
+        margin-bottom: 90px
     }
 }
 
